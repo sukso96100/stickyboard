@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+ 
+    <!--CSS 스타일시트 로드-->
     <link href="css/semantic.css" rel="stylesheet" type="text/css">
     <title>StickyBoard</title>
 </head>
@@ -32,18 +34,35 @@
    <div class="ui fixed top menu">
        <a class="toggle item"><i class="list layout icon"></i></a>
     <a class="item">StickyBoard</a>
-       <div class="item">
-       </div>
        <div class="right menu">
-       <a class="item">
-           <i class="ui edit icon"></i>
-           New Sticky
-           </a></div>
+       <a class="showmodal item"><i class="ui edit icon"></i>New Sticky</a>
+       </div>
        
+       
+       <!--새 스티커 메모 입력 모달 창-->
+       <div class="ui modal">
+  <i class="close icon"></i>
+  <div class="header">
+    <i class="ui edit icon"></i> New Sticky
+  </div>
+  <div class="content">
+    <div class="ui form">
+  <div class="field">
+    <label>Type some text you want to add as a new sticky.</label>
+    <textarea></textarea>
+  </div>
+</div>
+  </div>
+  <div class="actions">
+    <div class="ui button">Cancel</div>
+    <div class="ui button">OK</div>
+  </div>
+</div>
+    </div>
+    
        <!--자바스크립트 로드-->
        <script src="js/jquery.min.js"></script>
        <script src="js/semantic.js"></script>
-        <script src="js/sidebar.js"></script>
-    </div>
+        <script src="js/index.js"></script>
 </body>
 </html>
