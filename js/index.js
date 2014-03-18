@@ -9,3 +9,4 @@ $('.toggle.item')
 $('.ui.modal')
   .modal('attach events', '.showmodal.item', 'show')
 ;
+
