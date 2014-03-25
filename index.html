@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 <head>
- 
     <!--CSS 스타일시트 로드-->
     <link href="css/semantic.css" rel="stylesheet" type="text/css">
     <title>StickyBoard</title>
@@ -49,9 +48,9 @@
     <div class="ui form">
   <div class="field">
     <label>Type some text you want to add as a new sticky.</label>
-    <input type="text" ng-model=""></input>
+    <input type="text" name="input" ng-model="text" required>
     <div class="ui segment">
-        <div id="preview">PREVIEW</div>
+       <p><b>PREVIEW</b><br/>{{text}}</p><br/>
     </div>
      <div class="ui fluid button" id="previewbtn">Preview</div>
     
@@ -66,8 +65,8 @@
     </div>
     
        <!--자바스크립트 로드-->
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
        <script src="js/jquery.min.js"></script>
-       <script src="js/angular.min.js"></script>
        <script src="js/semantic.js"></script>
         <script src="js/index.js"></script>
 </body>
